@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <script src="dom01-visualizacin.js"></script>
+        <title>Document Object Model</title>
+        <style>
+            .boton {
+                padding: 10px;
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Eventos Inline</h1>
+        <button onclick="alert('Hola')">Click</button>
+        <br>
+        <button onclick="mostrarAlerta()">Mostrar alerta</button>
+        <br>
+        <input type="text" oninput="console.log(this.value)">
+        <br>
+        <button onclick="agregarProducto()">Mostrar alerta</button>
+        <br>
+        <br>
+        <button id="btnAgregar">agregarProducto</button>
+        <br>
+        <ul id="listaProductos1"></ul>
+        <h1>Eventos por addEventListener</h1>
+        <button id="boton">Haz click</button>
+        <br>
+        <input id="campo" type="text" placeholder="Escribe algo... "/>
+        <br>
+        <button id="btnAgregar" class="boton">agregar producto</button>
+        <ul id="listaProductos1"></ul>
+        <script src="dom05-eventos.js"></script>
+
+    </body>
